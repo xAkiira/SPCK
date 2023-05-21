@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .help{
@@ -43,7 +44,7 @@ ul li {
 ul li a {
     color: 	#FFC0CB;
     text-decoration: none;
-    font-weight: 20px;
+    font-weight: bold;
 }
 
 ul li a:hover {
@@ -56,64 +57,46 @@ ul li a:hover {
     background: #FFB6C1;
     padding: 12px 30px;
     border-radius: 30px;
-    color: white;
-    font-weight: 10px;
+    color: #FFB6C1;
+    font-weight: bold;
     font-size: 15px;
     transition: .4s;
 }
+
 .form:hover {
-    transform: scale(1,2);
-}
-
-.nav_slice{
-    height: 100vh;
-    width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    background: #FDE2F3;
-}
-
-.slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.slides{
-    width: 500%;
-    height: 500px;
-    display: block;
-}
-
-.slides input input[name=" "] {
-    display: none;
-
-}
-
-.slide{
-    width: 20%;
-    transition: 2s;
-}
-
-.slide img {
-    width: 500px;
-    height: 500px;
-}
-
-.navigation_manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: block;
-    justify-content: center;
-}
-
-.manual_btn{
-    border: 2px solid #FDE2F3;
-    padding: 5px;
-    border-radius: 10px;
+    transform: scale(1,1.5);
     cursor: pointer;
-    transition: 1s;
 }
 
+.myslide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.showslide {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.prev , .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #FFB6C1;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}

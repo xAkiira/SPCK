@@ -35,63 +35,50 @@
                 <li><a href="#">Đồ gia dụng</a></li>
             </ul>
         </div>
-
+        
         <div class="form">
             <button>
-                <a href="#">Đăng ký</a>/
                 <a href="#">Đăng nhập</a>
             </button>
         </div>
     </div>
-    <div class="nav_slide">
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <input type="radio" name="radio-btn" id="radio5">
-                <input type="radio" name="radio-btn" id="radio6">
     
-                <div class="slide_first">
-                    <img width="800px" height="500px" src="../ảnh sliceshow/DNB.jpg.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../ảnh sliceshow/MGTL.jpg.png" alt="">
-                </div>            
-                <div class="slide">
-                    <img src="../ảnh sliceshow/TV.jpg.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../ảnh sliceshow/1.jpg.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../ảnh sliceshow/2.jpg.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../ảnh sliceshow/3.jbg.jpg" alt="">
-                </div>
-    
-                <div class="navigation_auto">
-                    <div class="auto_btn1"></div>
-                    <div class="auto_btn2"></div>
-                    <div class="auto_btn3"></div>
-                    <div class="auto_btn4"></div>
-                    <div class="auto_btn5"></div>
-                    <div class="auto_btn6"></div>
-                </div>
-    
-            </div>
-    
-            <div class="navigation_manual">
-                <label for="radio1" class="manual1_btn"></label>
-                <label for="radio2" class="manual2_btn"></label>
-                <label for="radio3" class="manual3_btn"></label>
-                <label for="radio4" class="manual4_btn"></label>
-                <label for="radio5" class="manual5_btn"></label>
-                <label for="radio6" class="manual6_btn"></label>
-            </div>
+    <div class="slideshow">
+        <div class="myslide">
+            <div class="numbertext">1 / 4</div>
+            <img src="img4.jpg" alt="" style="width: 100%;">
+            <div class="text">Đồ nội thất</div>
         </div>
+
+        <div class="myslide">
+            <div class="numbertext">2 / 4</div>
+            <img src="img2.jpg" alt="" style="width: 100%;">
+            <div class="text">Đồ gia dụng</div>
+        </div>
+
+        <div class="myslide">
+            <div class="numbertext">3 / 4</div>
+            <img src="img5.jpg" alt="" style="width: 100%;">
+            <div class="text">Đồ nội thất</div>
+        </div>
+
+        <div class="myslide">
+            <div class="numbertext">4 / 4</div>
+            <img src="img3.jpg" alt="" style="width: 100%;">
+            <div class="text">Đồ gia dụng</div>
+        </div>
+
+        <a class="prev" onclick="plusslide(-1)">&#10090</a>
+        <a class="prev" onclick="plusslide(1)">&#10091</a>
     </div>
+    <br>
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentslide(1)"></span>
+        <span class="dot" onclick="currentslide(2)"></span>
+        <span class="dot" onclick="currentslide(3)"></span>
+        <span class="dot" onclick="currentslide(4)"></span>
+    </div>
+
+    <script src="../js/abc.js"></script>
 </body>
 </html>
