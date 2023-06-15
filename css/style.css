@@ -50,6 +50,10 @@ header {
     padding: 20px 100px;
     transition: 0.5s linear;
 }
+header .shadow {
+    background: var(--bg-color);
+    box-shadow: 0 0 4px rgb(223, 105, 154, 0.89) ;
+}
 .logo {
     display: flex;
     align-items: center;
@@ -112,6 +116,33 @@ header {
     border-radius: 8px;
     box-shadow: var(--box-shadow);
 }
+.cart img {
+    width: 100px;
+}
+
+.cart .box {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.cart .box .text h3 {
+    font-size: 16px;
+}
+
+.cart .box .text .bx {
+    font-size: 24px;
+}
+
+.cart .box .text .bx:hover {
+    color: var(--main-color);
+}
+
+.cart h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .cart.active {
     right: 16px;
     transition: 0.2s;
@@ -309,4 +340,58 @@ header {
 .reviews-container .box:hover {
     background: var(--text-color);
     color: var(--main-color);
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 10px;
+    color: var(--text-color);
+}
+.footer-box h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.social a .bx {
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 10px;
+    background: var(--second-color);
+    border-radius: 8px;
+}
+.social a .bx:hover {
+    background: var(--main-color);
+    color:var(--bg-color);
+}
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box li a {
+    color: var(--text-color);
+}
+.footer-box li a:hover {
+    color: var(--main-color);
+}
+.payment {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.payment img {
+    width: 45px;
+}
+.copyright {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
 }

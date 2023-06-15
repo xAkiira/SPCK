@@ -74,7 +74,7 @@ const productslist = [
 ]
 function showlist() {
     for (let index = 0; index < productslist.length; index++) {
-        document.getElementById("products").innerHTML += `<div class="box">
+        document.getElementById("product").innerHTML += `<div class="box">
         <img src="${productslist[index].image}" alt="">
         <div class="content">
             <h2>${productslist[index].name}</h2>
